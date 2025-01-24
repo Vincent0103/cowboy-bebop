@@ -1,0 +1,12 @@
+- funny type game
+- 4 golden melodies to collect
+- the game gets harder as we collect melodies
+- ennemies coming out of the ground, and following you to attack you.
+- ennemies are cowboy gedagedi.
+- when the ennemies are coming they emit a brain rot sound (country club music or smh like that)
+- ranch like map (cowboy village)
+- 3 puzzles to do in order to get the 3 melodies one by one
+- the puzzles are objectifs that we need to accomplish like finding a specific item in the cowboy village...
+- For the last melody we need to fight a boss when he gets into his last form (about 30% health left) he shoots infinite nuggets synced with a melody.
+- the first ennemies come from everywhere or on the ground and they spawn on a certain radius from the player
+- audio increases as the we collect the golden medolies
