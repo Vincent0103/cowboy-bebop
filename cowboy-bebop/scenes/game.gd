@@ -17,3 +17,6 @@ func _physics_process(delta: float) -> void:
 		bullet_temp.position = player.position
 		bullet_temp.direction = -1
 		add_child(bullet_temp)
+		var audio_player = bullet_temp.get_node("AudioStreamPlayer2D")
+		if audio_player:
+			audio_player.play()
