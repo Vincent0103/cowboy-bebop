@@ -1,5 +1,5 @@
 extends Node2D
-@onready var bullet = preload("res://scenes/area_2d.tscn")
+@onready var bullet = preload("res://scenes/bullet.tscn")
 
 var bullet_scene :PackedScene
 var player : Node2D

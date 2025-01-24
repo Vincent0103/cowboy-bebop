@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://bqhvmigvtgp8s"]
 
 [ext_resource type="Script" path="res://scripts/golden_melody.gd" id="1_v2e8v"]
-[ext_resource type="Texture2D" uid="uid://bqcqey6p6qkyq" path="res://assets/sprites/GoldenMelody.png" id="2_38c7y"]
+[ext_resource type="Texture2D" uid="uid://cc8167wtmn8h8" path="res://assets/sprites/GoldenMelody.png" id="2_38c7y"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a567g"]
 atlas = ExtResource("2_38c7y")
@@ -68,7 +68,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kvgtx"]
-radius = 6.0
+radius = 6.08276
 
 [node name="Coin" type="Area2D"]
 script = ExtResource("1_v2e8v")
@@ -76,7 +76,7 @@ script = ExtResource("1_v2e8v")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ebn4h")
 autoplay = "default"
-frame_progress = 0.634122
+frame_progress = 0.763147
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_kvgtx")
