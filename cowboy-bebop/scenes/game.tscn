@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dx0ccmwrjqpa2"]
+[gd_scene load_steps=6 format=3 uid="uid://dx0ccmwrjqpa2"]
 
 [ext_resource type="PackedScene" uid="uid://b37b3qsf7mcik" path="res://scenes/player.tscn" id="1_owgjb"]
 [ext_resource type="Texture2D" uid="uid://c74qrub1qoplq" path="res://assets/sprites/TilesetFloor.png" id="2_yclnt"]
+[ext_resource type="PackedScene" uid="uid://bqhvmigvtgp8s" path="res://scenes/goldenMelody.tscn" id="3_ck8o3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqyu1"]
 texture = ExtResource("2_yclnt")
@@ -203,3 +204,15 @@ position = Vector2(-2, 0)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(4, 4)
+
+[node name="Coin" parent="." instance=ExtResource("3_ck8o3")]
+position = Vector2(-91, -33)
+
+[node name="Coin2" parent="." instance=ExtResource("3_ck8o3")]
+position = Vector2(-79, 52)
+
+[node name="Coin3" parent="." instance=ExtResource("3_ck8o3")]
+position = Vector2(43, -43)
+
+[node name="Coin4" parent="." instance=ExtResource("3_ck8o3")]
+position = Vector2(62, 93)

@@ -8,6 +8,9 @@ func get_input():
 	var input_direction = Input.get_vector("left", "right", "up", "down")
 	velocity = input_direction * speed
 	
+	if Input.is_action_just_pressed("left_click"):
+		print("clicking")
+	
 	if input_direction == Vector2.LEFT:
 		animatedSprite.play("move_left")
 		last_direction = 1
@@ -24,8 +27,7 @@ func get_input():
 		if (last_direction == 0): animatedSprite.play("idle_down")
 		elif (last_direction == 1): animatedSprite.play("idle_left")
 		elif (last_direction == 2): animatedSprite.play("idle_up")
-		else: animatedSprite.play("idle_right")		
-		print(last_direction)
+		else: animatedSprite.play("idle_right")
 	
 	
 func _physics_process(delta):
