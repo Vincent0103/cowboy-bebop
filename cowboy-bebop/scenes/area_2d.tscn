@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://46modupn0bui"]
+
+[ext_resource type="Texture2D" uid="uid://5iensepvjqrf" path="res://assets/sprites/attaque melo.png" id="1_p287g"]
+[ext_resource type="Script" path="res://scripts/area_2d.gd" id="1_t7ewy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_goxcx"]
+
+[node name="bullet" type="Area2D"]
+position = Vector2(4, -1)
+script = ExtResource("1_t7ewy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 0)
+shape = SubResource("CircleShape2D_goxcx")
+
+[node name="AttaqueMelo" type="Sprite2D" parent="."]
+scale = Vector2(1.91, 2.005)
+texture = ExtResource("1_p287g")
