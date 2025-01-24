@@ -1,0 +1,74 @@
+[gd_scene load_steps=11 format=3 uid="uid://cf6t6yb0cmjpd"]
+
+[ext_resource type="Texture2D" uid="uid://yicgdwo36f6b" path="res://Ninja Adventure - Asset Pack/Backgrounds/Animated/QuickSand/QuickSand32x32.png" id="1_jm2xr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0slo0"]
+atlas = ExtResource("1_jm2xr")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rd7ip"]
+atlas = ExtResource("1_jm2xr")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gljlt"]
+atlas = ExtResource("1_jm2xr")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ds2wk"]
+atlas = ExtResource("1_jm2xr")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kgh73"]
+atlas = ExtResource("1_jm2xr")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_op54j"]
+atlas = ExtResource("1_jm2xr")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p08la"]
+atlas = ExtResource("1_jm2xr")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jx711"]
+atlas = ExtResource("1_jm2xr")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aniuv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0slo0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rd7ip")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gljlt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ds2wk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kgh73")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_op54j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p08la")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jx711")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_aniuv")
+autoplay = "default"
+frame_progress = 0.17994
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
